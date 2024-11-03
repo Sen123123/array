@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <button onclick="Ascending()">ASCEND</button>
+        <button onclick="Decending()">DECEND</button>
+        <h3 id="sum"></h3>
+        <script>
+            var value = [7, 0, 3, 5, 1, 7, 4];
+            document.getElementById("sum").innerHTML = value;
+            function Ascending() {
+                value.sort(function(a, b) {return a - b});
+                document.getElementById("sum").innerHTML = value;
+            }
+
+            function Decending() {
+                    value.sort(function (a, b) {return b - a });
+                document.getElementById("sum").innerHTML = value;
+            }
+
+        </script>
+    </body>
+</html>
